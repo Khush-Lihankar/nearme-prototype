@@ -649,14 +649,13 @@
     <script>
         // Firebase configuration
         const firebaseConfig = {
-            apiKey: "AIzaSyCGykj2FwD_z1NTsyGTunuEXIS9DUIvBVk",
-  authDomain: "nearby0001.firebaseapp.com",
-  databaseURL: "https://nearby0001-default-rtdb.firebaseio.com",
-  projectId: "nearby0001",
-  storageBucket: "nearby0001.firebasestorage.app",
-  messagingSenderId: "693519270969",
-  appId: "1:693519270969:web:cbee14455def26ed4fb9e8",
-  measurementId: "G-DCVBPFEMDV"
+            apiKey: "AIzaSyBBPbXJsleDPCJ71BInKDOLfWZsUuSd21E",
+            authDomain: "gps-d6b79.firebaseapp.com",
+            projectId: "gps-d6b79",
+            storageBucket: "gps-d6b79.firebasestorage.app",
+            messagingSenderId: "626539094767",
+            appId: "1:626539094767:web:b3c92fae3af36a035a311a",
+            measurementId: "G-VW4Y6W803J"
         };
 
         // Initialize Firebase
@@ -745,7 +744,7 @@
             if (user) {
                 // User is signed in
                 showPage(dashboardPage);
-                welcomeUser.textContent = Welcome, ${user.displayName || 'User'}!;
+                welcomeUser.textContent = `Welcome, ${user.displayName || 'user'}`;
                 userEmail.textContent = user.email;
                 userAvatar.src = user.photoURL || 'https://via.placeholder.com/150';
                 
@@ -1240,7 +1239,7 @@
         // Helper function to show messages
         function showMessage(element, text, type) {
             element.textContent = text;
-            element.className = message ${type};
+            element.className = 'message ${type}';
             element.style.display = 'block';
             
             // Auto-hide success messages after 3 seconds
